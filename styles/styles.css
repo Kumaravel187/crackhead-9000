@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Griffy&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.main-display {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background-color: #93e4ff;
+  color: #011627;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header__name {
+  font-size: 1.25rem;
+  font-family: "Lobster", sans-serif;
+  text-transform: uppercase;
+}
+.header__name .span {
+  text-align: center;
+  display: block;
+  font-family: "Griffy", sans-serif;
+  font-size: 2.25rem;
+}
+.header__img {
+  width: 6rem;
+  -webkit-clip-path: circle(30%);
+          clip-path: circle(30%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #e6b89c;
+  position: relative;
+}
+.main .section {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 18rem;
+  width: 100%;
+  box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.main .section__heading {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.main .section__heading .span {
+  font-weight: 600;
+}
+.main .section .wrapper {
+  margin-top: 3rem;
+}
+.main .section__btn {
+  display: inline-block;
+  border: none;
+  background-color: #93e4ff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main .section .radio {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+.main .section .radio:first-child {
+  border-top: 1px solid lightgray;
+}
+.main .modal {
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 20rem;
+  height: 35rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+}
+.main .modal__wrapper {
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .modal__wrapper p {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.main .modal__description {
+  padding: 1rem;
+}
+.main .modal__img {
+  padding: 1rem;
+  width: 75%;
+  height: 22rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #93e4ff;
+  color: #011627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}/*# sourceMappingURL=styles.css.map */

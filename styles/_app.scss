@@ -1,0 +1,129 @@
+.header {
+  background-color: lighten($color: $blue, $amount: 30%);
+  color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+
+  &__name {
+    font-size: $fs-xl;
+    font-family: $ff-sec-one;
+    text-transform: uppercase;
+    .span {
+      text-align: center;
+      display: block;
+      font-family: $ff-sec-two;
+      font-size: $fs-xxl;
+    }
+  }
+
+  &__img {
+    width: 6rem;
+    clip-path: circle(30%);
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: $salmon;
+  position: relative;
+  .section {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 2rem;
+    max-width: 18rem;
+    width: 100%;
+    box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    &__heading {
+      margin-bottom: 2rem;
+      font-size: $fs-l;
+      padding: 1rem;
+
+      .span {
+        font-weight: $fw-dark;
+      }
+    }
+    .wrapper {
+      margin-top: 3rem;
+    }
+    &__btn {
+      display: inline-block;
+      border: none;
+      background-color: lighten($color: $blue, $amount: 30%);
+      padding: 0.5rem 1.25rem;
+      border-radius: 1rem;
+      text-transform: capitalize;
+      font-weight: $fw-dark;
+      cursor: pointer;
+    }
+
+    .radio {
+      &:first-child {
+        border-top: 1px solid lightgray;
+      }
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+      border-bottom: 1px solid lightgray;
+      border-left: 1px solid lightgray;
+      border-right: 1px solid lightgray;
+    }
+  }
+
+  .modal {
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 20rem;
+    height: 35rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+
+    &__wrapper {
+      width: 20rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      p {
+        font-size: $fs-xl;
+        cursor: pointer;
+      }
+    }
+
+    &__description {
+      padding: 1rem;
+    }
+
+    &__img {
+      padding: 1rem;
+      width: 75%;
+      height: 22rem;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer {
+  background-color: lighten($color: $blue, $amount: 30%);
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
