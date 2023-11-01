@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <img class="modal__img" src="${friend[0]}" alt="" />
     </div>`;
 
-      modalEl.style.display = "block";
+      modalEl.style.display = "flex";
     } else {
       modalEl.style.display = "none";
     }

@@ -103,6 +103,7 @@ select {
   padding: 3rem 0;
   background-color: #e6b89c;
   position: relative;
+  height: 42rem;
 }
 .main .section {
   text-align: center;
@@ -115,9 +116,11 @@ select {
   z-index: 1;
 }
 .main .section__heading {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 0.825rem;
+  padding: 1rem 0.25rem;
+}
+.main .section__heading:last-of-type {
+  margin-bottom: 1rem;
 }
 .main .section__heading .span {
   font-weight: 600;
@@ -153,8 +156,6 @@ select {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  width: 20rem;
-  height: 35rem;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -162,27 +163,35 @@ select {
   align-items: center;
   text-align: center;
   box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+  width: 18rem;
+  height: 40rem;
 }
 .main .modal__wrapper {
-  width: 20rem;
-  padding: 1rem;
   display: flex;
   justify-content: flex-end;
+  padding: 1rem 2rem;
 }
-.main .modal__wrapper p {
-  font-size: 1.25rem;
+.main .modal__wrapper #close-modal {
+  display: inline-block;
+  border: none;
+  background-color: #93e4ff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
   cursor: pointer;
 }
 .main .modal__description {
-  padding: 1rem;
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .main .modal__img {
-  padding: 1rem;
-  width: 75%;
-  height: 22rem;
+  width: 92%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .footer {

@@ -31,6 +31,7 @@
   padding: 3rem 0;
   background-color: $salmon;
   position: relative;
+  height: 42rem;
   .section {
     text-align: center;
     background-color: whitesmoke;
@@ -42,9 +43,12 @@
     z-index: 1;
 
     &__heading {
-      margin-bottom: 2rem;
-      font-size: $fs-l;
-      padding: 1rem;
+      font-size: $fs-m;
+      padding: 1rem 0.25rem;
+
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
 
       .span {
         font-weight: $fw-dark;
@@ -84,8 +88,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
-    width: 20rem;
-    height: 35rem;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -93,28 +95,36 @@
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 14px 17px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    height: 40rem;
 
     &__wrapper {
-      width: 20rem;
-      padding: 1rem;
       display: flex;
       justify-content: flex-end;
-      p {
-        font-size: $fs-xl;
+      padding: 1rem 2rem;
+      #close-modal {
+        display: inline-block;
+        border: none;
+        background-color: lighten($color: $blue, $amount: 30%);
+        padding: 0.5rem 1.25rem;
+        border-radius: 1rem;
+        text-transform: capitalize;
+        font-weight: $fw-dark;
         cursor: pointer;
       }
     }
 
     &__description {
-      padding: 1rem;
+      padding: 0.5rem;
+      display: inline-block;
+      font-size: $fs-xl;
+      font-weight: $fw-dark;
     }
 
     &__img {
-      padding: 1rem;
-      width: 75%;
-      height: 22rem;
+      width: 92%;
       object-fit: contain;
-      margin: 0 auto;
+      margin: 1rem auto;
     }
   }
 }
