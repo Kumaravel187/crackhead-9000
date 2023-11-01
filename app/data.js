@@ -74,7 +74,7 @@ export const friendsData = [
   {
     name: ["asyraf"],
     image: `${baseURL}asyraf-two.jpg`,
-    alt: "Kimak muscle baik but not girlfriend",
+    alt: "Kimak muscle baik but no girlfriend",
   },
   {
     name: ["asyraf"],
