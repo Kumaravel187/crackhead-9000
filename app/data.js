@@ -66,4 +66,69 @@ export const friendsData = [
     image: `${baseURL}edy-four.jpg`,
     alt: "Cb fucking cold but my angkong nice",
   },
+  {
+    name: ["asyraf"],
+    image: `${baseURL}asyraf-one.jpg`,
+    alt: "I love crackno",
+  },
+  {
+    name: ["asyraf"],
+    image: `${baseURL}asyraf-two.jpg`,
+    alt: "Kimak muscle baik but not girlfriend",
+  },
+  {
+    name: ["asyraf"],
+    image: `${baseURL}asyraf-three.jpg`,
+    alt: "Isap rokok sial",
+  },
+  {
+    name: ["asyraf"],
+    image: `${baseURL}asyraf-four.jpg`,
+    alt: "Dont do drugs kiddos",
+  },
+  {
+    name: ["fadhil"],
+    image: `${baseURL}fadhil-one.jpg`,
+    alt: "Wot you looking at mate",
+  },
+  {
+    name: ["john"],
+    image: `${baseURL}john-one.jpg`,
+    alt: "sakongsa headman dei",
+  },
+  {
+    name: ["john"],
+    image: `${baseURL}john-two.jpg`,
+    alt: "Hi my name is jeff",
+  },
+  {
+    name: ["john"],
+    image: `${baseURL}john-three.jpg`,
+    alt: "Look ma, no hands",
+  },
+  {
+    name: ["seyan"],
+    image: `${baseURL}seyan-one.jpg`,
+    alt: "no shave november",
+  },
+  {
+    name: ["seyan"],
+    image: `${baseURL}seyan-two.jpg`,
+    alt: "I am 25 and immune to peer pressure",
+  },
+  {
+    name: ["seyan"],
+    image: `${baseURL}seyan-three.jpg`,
+    alt: "uggggggggggghhhhhhhhhhhhhhhh",
+  },
+  {
+    name: ["zai"],
+    image: `${baseURL}zai-one.jpg`,
+    alt: "MATREP FOR LYFEEEEE",
+  },
+  {
+    name: ["zai"],
+    image: `${baseURL}zai-two.jpg`,
+    alt: "I need more hyperthropy work",
+  },
 ];

@@ -188,7 +188,7 @@ select {
   font-weight: 600;
 }
 .main .modal__img {
-  width: 92%;
+  width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 1rem auto;
